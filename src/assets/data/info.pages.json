@@ -1,0 +1,15 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema",
+    "pageInfo": {
+        "title": "Mi portafolio",
+        "email": "juancgarciaco@hotmail.com",
+        "authorName": "JuanKa",
+        "authorWeb": "http://recursotecnologico.com"
+    },
+    "pageSocial": {
+        "facebook": "https://www.facebook.com/juancgarciaco",
+        "twitter": "https://twitter.com/juancgarciaco",
+        "instagram": "https://www.instagram.com/juancgarciaco/"
+    },
+    "teamWork": []
+}
