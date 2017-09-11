@@ -3,15 +3,28 @@ import { Http } from '@angular/http';
 
 @Injectable()
 export class InformacionService {
-  infoData: object = {};
+  pageinfo: object = {
+    'basic': {
+        'title': '',
+        'email': '',
+        'authorName': '',
+        'authorWeb': ''
+    },
+    'social': {
+        'facebook': '',
+        'twitter': '',
+        'instagram': ''
+    },
+    'teamWork': []
+};
 
   constructor(
     public http: Http
   ) {
     this.http.get('assets/data/info.pages.json')
       .subscribe(data => {
-        this.infoData = data.json();
-        console.log(this.infoData);
+        this.pageinfo = data.json();
+        console.log(this.pageinfo);
       });
   }
 
