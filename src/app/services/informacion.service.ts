@@ -42,7 +42,7 @@ export class InformacionService {
       .subscribe(data => {
         this.info_aboutus_teamwork = data.json();
         this.info_aboutus_teamwork_loaded = true;
-        // console.log(this.info_main_headerfooter);
+        console.log(this.info_aboutus_teamwork);
       });
 
   }
