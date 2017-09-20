@@ -18,8 +18,10 @@ export class ProductosService {
     if (this.productos.length === 0) {
       this.http.get('https://jcgco-udemy-html2angular.firebaseio.com/productos_idx.json')
         .subscribe(data => {
-          this.productos = data.json();
-          this.productos_loaded = true;
+          setTimeout( () => {
+            this.productos = data.json();
+            this.productos_loaded = true;
+          }, 2000);
           // console.log(this.productos);
         });
     }
