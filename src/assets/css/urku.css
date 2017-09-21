@@ -1293,6 +1293,9 @@ body {
 .rk-portfolio-category {
   letter-spacing: .021em;
 }
+.rk-portfolio-title, .rk-portfolio-category{
+  color: rgba(24, 23, 23, 0.8);
+}
 
 .rk-portfolio-inner-client span {
   letter-spacing: .05em;
@@ -1350,7 +1353,7 @@ body {
 }
 
 .item-inside-1 {
-  background-image: url("../img/project-1.jpg");
+  /* background-image: url("../img/project-1.jpg"); */
   background-position: 50% 100%;
   background-size: 350%;
 }
