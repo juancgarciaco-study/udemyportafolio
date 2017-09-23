@@ -3,7 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import {
     HomeMainComponent,
     AboutComponent,
-    ProductoComponent
+    ProductoComponent,
+    SearchComponent
 } from './components/index.paginas';
 // import { PageNotFoundComponent } from './';
 
@@ -11,6 +12,7 @@ const app_routes: Routes = [
     { path: 'home', component: HomeMainComponent },
     { path: 'about', component: AboutComponent },
     { path: 'product/:id', component: ProductoComponent },
+    { path: 'search/:termino', component: SearchComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
     // { path: '**', component: PageNotFoundComponent },
     // { path: 'path/:routeParam', component: MyComponent },

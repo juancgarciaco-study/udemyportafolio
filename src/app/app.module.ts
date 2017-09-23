@@ -17,6 +17,7 @@ import { ProductoComponent } from './components/producto/producto.component';
 // Services
 import { InformacionService } from './services/informacion.service';
 import { ProductosService } from './services/productos.service';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ProductosService } from './services/productos.service';
     HomeMainComponent,
     AboutComponent,
     ProductoComponent,
+    SearchComponent,
   ],
   imports: [
     BrowserModule,
