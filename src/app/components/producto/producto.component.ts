@@ -13,7 +13,7 @@ export class ProductoComponent implements OnInit {
 
   constructor(
     private route: ActivatedRoute,
-    private _ps: ProductosService
+    public _ps: ProductosService
   ) {
     route.params.subscribe(params => {
       if (params['id']) {

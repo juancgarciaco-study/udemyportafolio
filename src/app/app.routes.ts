@@ -22,4 +22,4 @@ const app_routes: Routes = [
     // { path: ..., component: ..., data: { message: 'Custom' }
 ];
 
-export const app_routing = RouterModule.forRoot(app_routes, { useHash: false });
+export const app_routing = RouterModule.forRoot(app_routes, { useHash: true });

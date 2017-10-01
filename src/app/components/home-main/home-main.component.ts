@@ -9,6 +9,6 @@ import { ProductosService } from '../../services/productos.service';
 
 export class HomeMainComponent {
   constructor(
-    private _ps: ProductosService
+    public _ps: ProductosService
   ) { }
 }

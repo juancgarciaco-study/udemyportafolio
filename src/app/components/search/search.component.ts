@@ -11,7 +11,7 @@ export class SearchComponent implements OnInit {
   termino: string = undefined;
   constructor(
     private route: ActivatedRoute,
-    private _ps: ProductosService
+    public _ps: ProductosService
   ) {
     route.params.subscribe(params => {
       this.termino = params['searchTerm'];
