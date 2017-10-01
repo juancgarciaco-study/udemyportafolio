@@ -18,15 +18,15 @@ export class ProductoComponent implements OnInit {
     route.params.subscribe(params => {
       if (params['id']) {
         this.cod = params['id'];
-        console.log(params);
-        console.log(this.cod);
+        // console.log(params);
+        // console.log(this.cod);
 
         // this.product = _ps.cargar_producto2(id)[0];
         // console.log(this.product);
 
         _ps.cargar_producto(this.cod).subscribe(res => {
           this.product = res.json();
-          console.log(this.product);
+          // console.log(this.product);
         });
       }
     });

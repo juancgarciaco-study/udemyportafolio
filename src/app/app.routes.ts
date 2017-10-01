@@ -12,7 +12,7 @@ const app_routes: Routes = [
     { path: 'home', component: HomeMainComponent },
     { path: 'about', component: AboutComponent },
     { path: 'product/:id', component: ProductoComponent },
-    { path: 'search/:termino', component: SearchComponent },
+    { path: 'search/:searchTerm', component: SearchComponent },
     { path: '**', pathMatch: 'full', redirectTo: 'home' }
     // { path: '**', component: PageNotFoundComponent },
     // { path: 'path/:routeParam', component: MyComponent },
@@ -22,4 +22,4 @@ const app_routes: Routes = [
     // { path: ..., component: ..., data: { message: 'Custom' }
 ];
 
-export const app_routing = RouterModule.forRoot(app_routes, { useHash: true });
+export const app_routing = RouterModule.forRoot(app_routes, { useHash: false });

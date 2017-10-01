@@ -13,8 +13,8 @@ export class HeaderComponent {
     private router: Router
   ) { }
 
-  buscar_producto(termino: string) {
-    console.log(termino);
-    this.router.navigate(['search', termino]);
+  buscar_producto(searchTerm: string) {
+    // console.log(searchTerm);
+    this.router.navigate(['search', searchTerm]);
   }
 }

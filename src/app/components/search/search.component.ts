@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { ProductosService } from '../../services/productos.service';
 
 @Component({
   selector: 'app-search',
@@ -6,8 +8,18 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class SearchComponent implements OnInit {
+  termino: string = undefined;
+  constructor(
+    private route: ActivatedRoute,
+    private _ps: ProductosService
+  ) {
+    route.params.subscribe(params => {
+      this.termino = params['searchTerm'];
+      // console.log(this.termino);
 
-  constructor() { }
+      _ps.buscar_productos(this.termino);
+    });
+  }
 
   ngOnInit() {
   }
